@@ -9,17 +9,28 @@ Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Either run
+Add below inside of your composer 
 
 ```
-php composer.phar require --prefer-dist nadeemse/yii2-module-based-migration "*"
+"nadeemse/yii2-module-based-migration": "dev-master"
 ```
 
-or add
+AND
 
 ```
-"nadeemse/yii2-module-based-migration": "*"
+.....
+
+"repositories": [
+    
+    {
+      "url": "https://github.com/nadeemse/yii2-module-based-migration",
+      "type": "git"
+    }
+  ],
+.....
 ```
+
+RUN composer update
 
 to the require section of your `composer.json` file.
 
